@@ -62,3 +62,4 @@ E:\Программирование\Step\Final project\MovieBot\MovieBot\obj\Deb
 E:\Программирование\Step\Final project\MovieBot\MovieBot\obj\Debug\MovieBot.csproj.CopyComplete
 E:\Программирование\Step\Final project\MovieBot\MovieBot\obj\Debug\Bot Application.dll
 E:\Программирование\Step\Final project\MovieBot\MovieBot\obj\Debug\Bot Application.pdb
+E:\Программирование\Step\Final project\MovieBot\MovieBot\bin\Bot Application.dll.config
