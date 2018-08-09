@@ -63,3 +63,5 @@ E:\Программирование\Step\Final project\MovieBot\MovieBot\obj\Deb
 E:\Программирование\Step\Final project\MovieBot\MovieBot\obj\Debug\Bot Application.dll
 E:\Программирование\Step\Final project\MovieBot\MovieBot\obj\Debug\Bot Application.pdb
 E:\Программирование\Step\Final project\MovieBot\MovieBot\bin\Bot Application.dll.config
+E:\Программирование\Step\Final project\MovieBot\MovieBot\bin\TMDbLib.dll
+E:\Программирование\Step\Final project\MovieBot\MovieBot\bin\TMDbLib.pdb

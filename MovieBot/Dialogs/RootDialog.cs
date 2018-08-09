@@ -2,6 +2,8 @@
 using System.Threading.Tasks;
 using Microsoft.Bot.Builder.Dialogs;
 using Microsoft.Bot.Connector;
+using TMDbLib;
+using TMDbLib.Client;
 
 namespace MovieBot.Dialogs
 {
@@ -15,16 +17,20 @@ namespace MovieBot.Dialogs
             return Task.CompletedTask;
         }
 
+        
         private async Task MessageReceivedAsync(IDialogContext context, IAwaitable<object> result)
-        {
+            {
             var activity = await result as Activity;
 
-            // calculate something for us to return
-            int length = (activity.Text ?? string.Empty).Length;
+            TMDbClient client = new TMDbClient("b7290a98a01bc42d6c1ec6a8cb92a0c0");
 
-            // return our reply to the user
-            await context.PostAsync($"You sent {activity.Text} which was {length} characters");
-
+            if(activity?.Text != null)
+            {
+                var service = new BotService();
+                var replyConversation = service.Run(activity);
+                await context.PostAsync(replyConversation.Result.Text);
+            }
+        
             context.Wait(MessageReceivedAsync);
         }
     }
